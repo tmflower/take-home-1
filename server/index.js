@@ -12,12 +12,11 @@ const users = require('./routes/users');
 const app = express();
 const log = logger(app);
 
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(debug());
 
 app.use('/users', users);
 
@@ -42,5 +41,8 @@ app.use(function(err, req, res, next) {
 app.set('port', process.env.PORT || 3001);
 
 const server = app.listen(app.get('port'), function() {
-  log.info('Express server listening on http://localhost:%d', server.address().port);
+  log.info(
+    'Express server listening on http://localhost:%d',
+    server.address().port
+  );
 });

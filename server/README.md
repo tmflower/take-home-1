@@ -48,7 +48,7 @@ Next, you need to install the package dependencies by running the following comm
 npm install
 ```
 
-Once the dependancies are installed, you can start the application server by running
+Once the dependencies are installed, you can start the application server by running
 ```
 npm start
 ```

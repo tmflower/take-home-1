@@ -4,8 +4,8 @@ const _ = require('lodash');
 const logger = require('../lib/logger');
 const log = logger();
 
-const users = require('../init_data.json').data;
-const curId = _.size(users);
+let users = require('../init_data.json').data;
+let curId = _.size(users) + 1;
 
 /* GET users listing. */
 router.get('/', function(req, res) {
@@ -33,7 +33,7 @@ router.get('/:id', function(req, res, next) {
   res.json(users[req.params.id]);
 });
 
-/* Deconste a user by id */
+/* Delete a user by id */
 router.delete('/:id', function(req, res) {
   const user = users[req.params.id];
   delete users[req.params.id];
@@ -46,7 +46,7 @@ router.delete('/:id', function(req, res) {
 router.put('/:id', function(req, res, next) {
   const user = req.body;
   if (user.id != req.params.id) {
-    return next(new Error('ID parameter does not match body'));
+    return next(new Error('ID paramter does not match body'));
   }
   users[user.id] = user;
   log.info('Updating user', user);

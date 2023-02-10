@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 
-export function Signup() {
+export function Signup({ setUserAdded }) {
+    const [message, setMessage] = useState('')
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -20,6 +20,8 @@ export function Signup() {
         evt.preventDefault();
         try { 
             await axios.post('http://localhost:3001/users', { firstName, lastName, email });
+            setMessage(`Welcome to Yodlr, ${firstName}!`);
+            setUserAdded(true);
         }
         catch(err) {
             console.error(err);
@@ -28,6 +30,7 @@ export function Signup() {
     return (
         <div>
             <h1>Yodlr Registration Portal</h1>
+            {message ? <p>{message}</p> : null}
             <form onSubmit={handleSubmit}>
                 <label htmlFor="firstName">
                     First name:
@@ -61,7 +64,6 @@ export function Signup() {
                 </label>
             <button type="submit">Submit</button>
             </form>
-            <NavLink to ="/admin" exact="true">Admin Page</NavLink>
         </div>
     )
 }
