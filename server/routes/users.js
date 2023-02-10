@@ -33,7 +33,7 @@ router.get('/:id', function(req, res, next) {
   res.json(users[req.params.id]);
 });
 
-/* Delete a user by id */
+/* Deconste a user by id */
 router.delete('/:id', function(req, res) {
   const user = users[req.params.id];
   delete users[req.params.id];
@@ -46,7 +46,7 @@ router.delete('/:id', function(req, res) {
 router.put('/:id', function(req, res, next) {
   const user = req.body;
   if (user.id != req.params.id) {
-    return next(new Error('ID paramter does not match body'));
+    return next(new Error('ID parameter does not match body'));
   }
   users[user.id] = user;
   log.info('Updating user', user);

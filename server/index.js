@@ -5,16 +5,19 @@ const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const logger = require('./lib/logger');
+const cors = require('cors');
 
 const users = require('./routes/users');
 
 const app = express();
 const log = logger(app);
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(debug());
 
 app.use('/users', users);
 
