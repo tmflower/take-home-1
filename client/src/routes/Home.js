@@ -7,7 +7,8 @@ export function Home() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            margin: '6rem'}}>
+            marginTop: '10rem'
+            }}>
             <Typography variant="h1">Welcome to Yodlr!</Typography>
             <Typography variant="h3">Who are you?</Typography>
             <Box sx={{display: 'flex', flexDirection: 'row', }}>                    
@@ -16,8 +17,7 @@ export function Home() {
                 </NavLink>                
                 <NavLink to="/admin">
                     <Button variant="contained" sx={{margin: '2rem', backgroundColor: "chocolate"}}>Admin</Button>
-                </NavLink>
-                
+                </NavLink>                
             </Box>
         </Box>
     )

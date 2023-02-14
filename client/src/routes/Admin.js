@@ -1,40 +1,33 @@
 // import { useState } from "react";
+import { Box, Typography, Table, TableHead, TableBody, TableRow, TableCell } from "@mui/material";
+import theme from "../theme";
 
 export function Admin({users}) {
-    // const [message, setMessage] = useState('');
-
-    // const deleteUser = (evt) => {
-    //     const selectedUserId = evt.target.value;
-    //     setMessage(`User ${selectedUserId} deleted!`)
-    //     users.filter(user => user.id === selectedUserId);     
-    // };
 
     return (
-        <div>
-            <h1>Admin</h1>
-            {/* {message ? <p>{message}</p> : null} */}
-            <table><caption>Yodlers</caption>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>First name</th>
-                        <th>Last name</th>
-                        <th>Email</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>                    
+        <Box sx={{margin: '8rem'}}>
+            <Typography variant="h2" sx={{margin: '6rem 0 0 0', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>Admin</Typography>
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell sx={{color: theme.typography.primary.color, fontSize: '1.5rem'}}>ID</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color, fontSize: '1.5rem'}}>First name</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color, fontSize: '1.5rem'}}>Last name</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color, fontSize: '1.5rem'}}>Email</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color, fontSize: '1.5rem'}}>Status</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>                    
                     {users.map((user, i) =>
-                    <tr key={i}>                        
-                        <td>{user.id}</td>
-                        <td>{user.firstName}</td>
-                        <td>{user.lastName}</td>
-                        <td>{user.email}</td>
-                        <td>{user.state}</td>
-                        {/* <button value={user.id} onClick={deleteUser}>❌</button> */}
-                    </tr>)}
-                </tbody>
-            </table>
-        </div>
+                    <TableRow key={i}>                        
+                        <TableCell sx={{color: theme.typography.primary.color}}>{user.id}</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color}}>{user.firstName}</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color}}>{user.lastName}</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color}}>{user.email}</TableCell>
+                        <TableCell sx={{color: theme.typography.primary.color}}>{user.state}</TableCell>
+                    </TableRow>)}
+                </TableBody>
+            </Table>
+        </Box>
     )
 }

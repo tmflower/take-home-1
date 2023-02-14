@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { Box, FormControl, Typography, TextField, InputLabel, Button } from "@mui/material";
+import { Box, Stack, FormControl, Typography, TextField, InputLabel, Button } from "@mui/material";
 
 export function Signup({ setUserAdded }) {
     const [message, setMessage] = useState('')
@@ -31,45 +31,44 @@ export function Signup({ setUserAdded }) {
     return (
         <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <Typography variant="h2" sx={{margin: '6rem'}}>Yodlr Registration Portal</Typography>
-            {message ? <p>{message}</p> : null}
-            <FormControl>
+            {message ? <Typography variant="h3" sx={{color: 'chocolate'}}>{message}</Typography> : null}            
                 <form onSubmit={handleSubmit}>
-                    <InputLabel htmlFor="firstName">
+                    <FormControl sx={{ width: '25ch', m: 2 }}>
+                    <Stack spacing={2}>
+                    <label htmlFor="firstName">
                         First name:  
                         <TextField 
-                            // variant="standard"
                             type="text"
                             name="firstName"
                             value={firstName}
                             id="firstName"
                             onChange={handleChange}>
                         </TextField>                                          
-                    </InputLabel>
-                    <InputLabel htmlFor="lastName">
+                    </label>
+                    <label htmlFor="lastName">
                         Last name:
                         <TextField
-                            // variant="standard"
                             type="text"
                             name="lastName"
                             value={lastName}
                             id="lastName"
                             onChange={handleChange}>
                         </TextField>
-                    </InputLabel>
-                    <InputLabel htmlFor="email">
+                    </label>
+                    <label htmlFor="email">
                         Email:
                         <TextField
-                            // variant="standard"
                             type="email"
                             name="email"
                             value={email}
                             id="email"
                             onChange={handleChange}>
                         </TextField>
-                    </InputLabel>
+                    </label>
                 <Button type="submit" variant="contained" sx={{margin: '2rem', backgroundColor: "chocolate"}}>Submit</Button>
-                </form>
-            </FormControl>
+                </Stack>
+                </FormControl>
+            </form>            
         </Box>
     )
 }
