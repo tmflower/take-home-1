@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-19btamt"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h2 css-5eqw5t-MuiTypography-root"
+    >
+      Admin Portal
+    </h2>
+    <table
+      class="MuiTable-root css-rqglhn-MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-375cik-MuiTableCell-root"
+            scope="col"
+          >
+            ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-375cik-MuiTableCell-root"
+            scope="col"
+          >
+            First name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-375cik-MuiTableCell-root"
+            scope="col"
+          >
+            Last name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-375cik-MuiTableCell-root"
+            scope="col"
+          >
+            Email
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-375cik-MuiTableCell-root"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Kyle
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            White
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            kyle@getyodlr.com
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            active
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Jane
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Stone
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            jane@getyodlr.com
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            active
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Lilly
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Smith
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            lilly@getyodlr.com
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            pending
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Fred
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Miles
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            fred@getyodlr.com
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            pending
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Alexandra
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            Betts
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            alex@getyodlr.com
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-5mac9p-MuiTableCell-root"
+          >
+            pending
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

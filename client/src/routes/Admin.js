@@ -6,7 +6,7 @@ export function Admin({users}) {
 
     return (
         <Box sx={{margin: '8rem'}}>
-            <Typography variant="h2" sx={{margin: '6rem 0 0 0', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>Admin</Typography>
+            <Typography variant="h2" sx={{margin: '6rem 0 0 0', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>Admin Portal</Typography>
             <Table>
                 <TableHead>
                     <TableRow>

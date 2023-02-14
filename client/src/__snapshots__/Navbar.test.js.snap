@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <nav>
+    <div
+      class="MuiBox-root css-0"
+    >
+      <header
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-11b3ww9-MuiPaper-root-MuiAppBar-root"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1x5wx18-MuiToolbar-root"
+        >
+          <a
+            aria-current="page"
+            class="link active"
+            element="[object Object]"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            class=""
+            element="[object Object]"
+            href="/signup"
+          >
+            Signup
+          </a>
+          <a
+            class=""
+            data-testid="adminLink"
+            element="[object Object]"
+            href="/admin"
+          >
+            Admin
+          </a>
+        </div>
+      </header>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

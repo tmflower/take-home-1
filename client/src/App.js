@@ -13,11 +13,15 @@ export function App() {
   const [users, setUsers] = useState([]);
   const [userAdded, setUserAdded] = useState(false);
 
-
   useEffect(() => {
     async function getUsers() {
-      const usersList = await axios.get("http://localhost:3001/users");
-      setUsers(usersList.data);
+      try {
+        const usersList = await axios.get("http://localhost:3001/users");
+        setUsers(usersList.data);
+      }
+      catch(err) {
+        console.error(err);
+      }
     }
     getUsers();
   }, [userAdded]);

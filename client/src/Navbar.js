@@ -12,7 +12,7 @@ export function Navbar() {
                     <Toolbar sx={{display: 'flex', justifyContent: 'space-evenly'}}>
                         <NavLink to="/" element={<Home />} className="link">Home</NavLink>
                         <NavLink to="/signup" element={<Signup />}>Signup</NavLink>
-                        <NavLink to="/admin" element={<Admin />}>Admin</NavLink>
+                        <NavLink to="/admin" element={<Admin />} data-testid="adminLink">Admin</NavLink>
                     </Toolbar>
                 </AppBar>
             </Box>

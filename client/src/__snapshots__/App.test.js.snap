@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <nav>
+      <div
+        class="MuiBox-root css-0"
+      >
+        <header
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-xc68p4-MuiPaper-root-MuiAppBar-root"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1x5wx18-MuiToolbar-root"
+          >
+            <a
+              aria-current="page"
+              class="link active"
+              element="[object Object]"
+              href="/"
+            >
+              Home
+            </a>
+            <a
+              class=""
+              element="[object Object]"
+              href="/signup"
+            >
+              Signup
+            </a>
+            <a
+              class=""
+              data-testid="adminLink"
+              element="[object Object]"
+              href="/admin"
+            >
+              Admin
+            </a>
+          </div>
+        </header>
+      </div>
+    </nav>
+    <div
+      class="MuiBox-root css-1d27sqt"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-kmsxfs-MuiTypography-root"
+      >
+        Welcome to Yodlr!
+      </h1>
+      <h3
+        class="MuiTypography-root MuiTypography-h3 css-1xx1ags-MuiTypography-root"
+      >
+        Who are you?
+      </h3>
+      <div
+        class="MuiBox-root css-1xhj18k"
+      >
+        <a
+          class="link"
+          href="/signup"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1b50r3g-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            User
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+        <a
+          class=""
+          href="/admin"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1b50r3g-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Admin
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

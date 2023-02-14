@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { Box, Stack, FormControl, Typography, TextField, InputLabel, Button } from "@mui/material";
+import { Box, Stack, FormControl, Typography, TextField, Button } from "@mui/material";
 
 export function Signup({ setUserAdded }) {
     const [message, setMessage] = useState('')
