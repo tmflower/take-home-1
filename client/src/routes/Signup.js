@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { Box, FormControl, Typography, TextField, InputLabel, Button } from "@mui/material";
 
 export function Signup({ setUserAdded }) {
     const [message, setMessage] = useState('')
@@ -28,42 +29,47 @@ export function Signup({ setUserAdded }) {
         }
     }
     return (
-        <div>
-            <h1>Yodlr Registration Portal</h1>
+        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <Typography variant="h2" sx={{margin: '6rem'}}>Yodlr Registration Portal</Typography>
             {message ? <p>{message}</p> : null}
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="firstName">
-                    First name:
-                    <input
-                        type="text"
-                        name="firstName"
-                        value={firstName}
-                        id="firstName"
-                        onChange={handleChange}>
-                    </input>                    
-                </label>
-                <label htmlFor="lastName">
-                    Last name:
-                    <input
-                        type="text"
-                        name="lastName"
-                        value={lastName}
-                        id="lastName"
-                        onChange={handleChange}>
-                    </input>
-                </label>
-                <label htmlFor="email">
-                    Email:
-                    <input
-                        type="email"
-                        name="email"
-                        value={email}
-                        id="email"
-                        onChange={handleChange}>
-                    </input>
-                </label>
-            <button type="submit">Submit</button>
-            </form>
-        </div>
+            <FormControl>
+                <form onSubmit={handleSubmit}>
+                    <InputLabel htmlFor="firstName">
+                        First name:  
+                        <TextField 
+                            // variant="standard"
+                            type="text"
+                            name="firstName"
+                            value={firstName}
+                            id="firstName"
+                            onChange={handleChange}>
+                        </TextField>                                          
+                    </InputLabel>
+                    <InputLabel htmlFor="lastName">
+                        Last name:
+                        <TextField
+                            // variant="standard"
+                            type="text"
+                            name="lastName"
+                            value={lastName}
+                            id="lastName"
+                            onChange={handleChange}>
+                        </TextField>
+                    </InputLabel>
+                    <InputLabel htmlFor="email">
+                        Email:
+                        <TextField
+                            // variant="standard"
+                            type="email"
+                            name="email"
+                            value={email}
+                            id="email"
+                            onChange={handleChange}>
+                        </TextField>
+                    </InputLabel>
+                <Button type="submit" variant="contained" sx={{margin: '2rem', backgroundColor: "chocolate"}}>Submit</Button>
+                </form>
+            </FormControl>
+        </Box>
     )
 }
